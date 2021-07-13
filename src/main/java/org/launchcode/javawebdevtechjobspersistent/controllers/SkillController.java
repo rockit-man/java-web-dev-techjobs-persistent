@@ -41,6 +41,7 @@ public class SkillController {
             model.addAttribute("title", "Add Skill");
             return "skills/add";
         }
+
         skillRepository.save(newSkill);
         return "redirect:";
     }
