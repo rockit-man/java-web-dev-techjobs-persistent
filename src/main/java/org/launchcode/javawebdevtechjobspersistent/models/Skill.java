@@ -1,6 +1,7 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -10,6 +11,9 @@ public class Skill extends AbstractEntity {
     @NotNull
     @Size(max = 500)
     public String description;
+
+    @ManyToMany(mappedBy="skills")
+    public Job jobs;
 
     public Skill() {}
 
