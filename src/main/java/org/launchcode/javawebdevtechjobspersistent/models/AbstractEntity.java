@@ -1,7 +1,5 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
-import org.springframework.web.bind.annotation.GetMapping;
-
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
